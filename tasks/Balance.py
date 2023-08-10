@@ -38,7 +38,9 @@ class Balance(AssistantBase):
         ]
     
     def get_balance(self) -> str:
+        # TODO: Call real API
         return "Your balance is $10."
 
-    def top_up_balance(self,amount) -> str:
+    def top_up_balance(self, amount) -> str:
+        # TODO: Call real API
         return f"Your balance has been topped up with ${amount}."

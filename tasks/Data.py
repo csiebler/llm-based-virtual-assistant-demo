@@ -39,7 +39,9 @@ class Data(AssistantBase):
         
         
     def get_data_balance(self) -> str:
+        # TODO: Call real API
         return "Your data balance is 10GB."
 
     def top_up_data(self, amount) -> str:
+        # TODO: Call real API
         return f"Your data balance has been topped up with {amount} GB."

@@ -21,7 +21,7 @@ def handle(user_message, task_key, cls):
     
     action_performed = False
     while not action_performed:
-        response = get_completion_with_functions(messages=messages, functions=functions)        
+        response = get_completion_with_functions(messages=messages, functions=functions)
         if response['finish_reason'] == "function_call":
             function_name = response['function_name']
             function_args = response['function_args']

@@ -33,6 +33,7 @@ class Roaming(AssistantBase):
         
         
     def roaming_cost_for_country(self, country) -> str:
+        # TODO: Call real API
         if country in ["Germany", "France", "Spain"]:
             return f"Roaming is free for {country}, you use it for the same conditions as in your local country."
         else:
